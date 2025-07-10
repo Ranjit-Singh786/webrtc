@@ -2,7 +2,7 @@ const { Server } = require("socket.io");
 
 const io = new Server(8000, {
  
-  origin: "https://webrtc-8c81.vercel.app",
+  origin: "https://webrtc-kappa-inky.vercel.app",
   methods: ["GET", "POST"],
   credentials: false,
   transports: ["websocket", "polling"],
