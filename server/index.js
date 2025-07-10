@@ -2,13 +2,10 @@ const { Server } = require("socket.io");
 
 const io = new Server(8000, {
  
-  origin: "*",
-  cors: {
-    origin: "*",
-    methods: ["GET", "POST"],
-    allowedHeaders: ["Content-Type"],
-    credentials: false,
-  },
+  origin: "https://webrtc-8c81.vercel.app",
+  methods: ["GET", "POST"],
+  credentials: false,
+  transports: ["websocket", "polling"],
 
 });
 
